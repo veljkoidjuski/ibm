@@ -1,0 +1,268 @@
+body{
+    padding:10px;
+    background-color: #150509;
+    font-size: 20px;
+    
+}
+
+
+@font-face {
+    font-family: 'ibmSerif';
+    src: url('IBMPlexSerif-Light.ttf');
+    font-weight:lighter;
+}
+
+@font-face {
+    font-family: 'ibmSerif';
+    src: url('IBMPlexSerif-Bold.ttf');
+    font-weight:bold;
+}
+
+@font-face {
+    font-family: 'ibm';
+    src: url('IBMPlexSans-Medium.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'ibmthin';
+    src: url('IBMPlexSans-Thin.ttf');
+    font-weight:100;
+}
+
+@font-face {
+    font-family: 'ibm';
+    src: url('IBMPlexSans-Bold.ttf');
+    font-weight:bold;
+}
+
+
+
+@font-face {
+    font-family: 'ibm';
+    src: url('IBMPlexSans-Light.ttf');
+    font-weight:lighter;
+}
+
+@font-face {
+    font-family: 'ibmSerif';
+    src: url('IBMPlexSerif-SemiBoldItalic.ttf');
+    font-weight:bold;
+    font-style:italic;
+}
+
+@font-face {
+    font-family: 'ibmSerif';
+    src: url('IBMPlexSerif-ExtraLightItalic.ttf');
+    font-style:italic;
+}
+
+#navigacionaPrecka{
+    display:flex;
+    padding: 5px 0px 5px 0px;
+    flex-direction: row;
+    height: 70px;
+    /*line-height: 100%;*/
+    flex-direction: row;
+    align-items: center;
+    position:fixed;
+    top:0px;
+    width:1328px;
+    background-color: #150509;
+    z-index: 1000;
+
+}
+
+#logo
+{
+    height:80%;
+    margin-right:10px;
+    filter: invert(64%) sepia(9%) saturate(860%) hue-rotate(184deg) brightness(99%) contrast(88%);
+}
+#logo2
+{
+    height:80%;
+    margin-right:10px;
+    filter: invert(64%) sepia(9%) saturate(860%) hue-rotate(184deg) brightness(99%) contrast(88%);
+    
+}
+
+#logo2:hover
+{
+    filter: invert(87%) sepia(38%) saturate(2347%) hue-rotate(356deg) brightness(96%) contrast(97%);
+    transition: filter 0.2s
+}
+
+#naslovPomocni
+{
+    font-size: 20px;
+    font-family: ibm;
+    font-weight:lighter;
+    color: #93A0BD;
+    background-color: #150509;
+}
+
+#unutra
+{
+    height: 100%;
+    line-height: 100%;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: ibm;
+    justify-content: right;
+    width:100%;
+    font-size:16px;
+    color: #93A0BD;
+    padding-right:0;
+    margin-right:0;
+    
+}
+
+.navlink
+{
+    padding: 0px 0px 0px 25px;
+    color:#93A0BD;
+    text-decoration: none;
+    font-weight: lighter;
+    transition: color 0.2s;
+    font-size: 20px;
+}
+
+.navlink:hover{
+    color:#F0C808;
+    font-weight: normal;
+    
+}
+
+#telo1
+{
+    padding:5px 10px 5px 0px;
+    position:absolute;
+    top: 60px;
+    width:1326px;
+}
+
+.nasl{
+    color:#F0C808;
+    font-family: ibmthin/*Serif*/;
+    /*font-style: italic;*/
+    font-weight: /*normal*/100;
+    text-align: justify;
+    font-size:52px;
+    line-height: 1.05;
+    margin-bottom: 30px;
+    margin-top:10px;
+    letter-spacing: -0.5px;
+
+}
+
+p
+{
+    font-family:ibm;
+    font-weight:lighter;
+    color:#93A0BD;
+    text-align: justify;
+    
+}
+
+.dugme
+{
+    background-color: #93A0BD;
+    border:none;
+    height:30px;
+    width:auto;
+    line-height: 30px;
+    display: inline-block;
+    padding:5px 15px 5px 15px;
+    color:#150509;
+    border-radius: 20px;
+    transition: background-color 0.2s;
+
+}
+
+.dugme:hover
+{
+    background-color: #F0C808;
+}
+
+.sveopstiKontejner
+{
+    width: 1326px;
+    /*margin: 0 auto;*/
+    overflow: hidden;
+}
+
+#a
+{
+    margin-top:0px
+}
+
+.poc
+{
+    margin-top:0px;
+    margin-bottom:25px;
+}
+
+a{
+    font-family:ibm;
+    font-weight:lighter;
+    text-decoration: none;
+    
+}
+
+#bclogo
+{
+    height:60%;
+    margin-left:10px;
+    filter: invert(64%) sepia(9%) saturate(860%) hue-rotate(184deg) brightness(99%) contrast(88%);
+}
+
+
+
+.foot
+{
+    position:absolute;
+    top:1350px;
+    
+    width:1326px;
+    margin:0 auto;
+    overflow:hidden;
+    padding:5px 0px 5px 0px;
+    z-index: 900;
+
+}
+
+#wrapper2
+{
+    width:1346px;
+    height:600px;
+    position:absolute;
+    top:525px;
+    background-color: #150509;
+    z-index: 500;
+}
+
+.dugmeMalo
+{
+    background-color: #93A0BD;
+    border:none;
+    height:12px;
+    width:auto;
+    line-height: 12px;
+    display: inline-block;
+    padding:6px 12px 6px 12px;
+    color:#150509;
+    border-radius: 12px;
+    transition: background-color 0.2s;
+
+}
+
+.dugmeMalo:hover
+{
+    background-color: #F0C808;
+}
+
+td{
+    padding: 10px 10px 10px 10px;
+}
