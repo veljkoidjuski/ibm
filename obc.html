@@ -66,6 +66,8 @@
             </td>
         </tr>
     </table>
+	
+	<a href = "?3d">ENTER THE MULTIVERSE</a>
 
     </div>
     
@@ -92,6 +94,27 @@
   
   </div>
   
+  <a class="dugme" id="a" style="position:fixed; bottom:50px;right:25px" onclick="scrollToTop()">↗ </a>
+  
+  <script>
+	function scrollToTop()
+	{
+		window.scrollTo({ top: 0, behavior: 'smooth' })
+	}
+	
+	
+    function ff() {
+        document.body.style.transform = 'rotate3d('+ Math.sin(rrr).toString() + ',' + Math.cos(rrr).toString() +', 0, 45deg)';
+        rrr += 0.03;
+    }
+            
+	rrr = 0;
+	
+	if(location.search =="?3d"){
+    setInterval(ff, 50);
+	}
+    
+  </script>
   
   </body>
 

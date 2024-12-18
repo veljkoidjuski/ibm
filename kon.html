@@ -32,21 +32,24 @@
     <form style="font-family: ibm; color:#150509;">
         <input style="padding:0px 15px 0px 15px; background-color: #93a0bd;font-family: ibm; color:#150509;border:none; border-radius: 15px;margin:10px 0px 10px 0px; height:30px; width:500px;"type="text" placeholder="Ваше име">
         <br/>
-        <input style="padding:0px 15px 0px 15px;background-color: #93a0bd;font-family: ibm; color:#150509;border:none; margin:10px 0px 10px 0px; border-radius: 15px; height:30px; width:500px;" type="text" placeholder="Ваша мејл адреса">
+        <input id = "MEJL" style="padding:0px 15px 0px 15px;background-color: #93a0bd;font-family: ibm; color:#150509;border:none; margin:10px 0px 10px 0px; border-radius: 15px; height:30px; width:500px;" type="text" placeholder="Ваша мејл адреса">
         <br/>
-        <textarea style="padding:10px 15px 10px 15px;background-color: #93a0bd;font-family: ibm; color:#150509;border:none; border-radius: 15px;margin-top:10px;width:500px;height: 100px;max-width:500px;max-height:200px;min-width:500px;" placeholder="Овде упишите Вашу поруку..."></textarea>
+        <textarea style="padding:10px 15px 10px 15px;background-color: #93a0bd;font-family: ibm; color:#150509;border:none; border-radius: 15px;margin-top:10px;width:500px;height: 100px;" placeholder="Овде упишите Вашу поруку..."></textarea>
     </form>
 
     <hr style="height: 20px; border:none">
-    <a class="dugme" id="a" >Пошаљите ✈ </a>
+    <a class="dugme" id="a" onclick="proveri()" >Пошаљите ✈ </a>
     
     <iframe style="position: absolute; top:20px; left:580px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5824611.492093534!2d10.06971054777299!3d44.534637846622566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a655b081aaaab%3A0x8ec967f464ad7cf1!2sIBM!5e0!3m2!1ssr!2srs!4v1730244719891!5m2!1ssr!2srs" width="750" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
+
+	<a href="?MACKA"><br><br>SPAWN THE CAT</a>
+	
     <div class="foot" style="font-size: 12px; margin-top:20px;">
       <div style="position: absolute; left:200px; display: flex; flex-direction: column; top:25px">
-        <a href="index.html" class="navlink" style="font-size: 12px;">Почетна↗</a><br>
-        <a href="obc.html" class="navlink" style="font-size: 12px;">О блокчејну↗</a><br>
-        <a href="kon.html" class="navlink" style="font-size: 12px;">Контакт↗</a><br>
+        <a href="index.html" class="navlink" style="font-size: 12px;">Почетна↗</a>
+        <a href="obc.html" class="navlink" style="font-size: 12px;">О блокчејну↗</a>
+        <a href="kon.html" class="navlink" style="font-size: 12px;">Контакт↗</a>
         <a href='https://www.ibm.com/us-en' class="navlink" style="font-size: 12px;">IBM↗</a>
       </div>
       <div style="position:absolute; left:1225px; top:35px">
@@ -64,7 +67,50 @@
   
   </div>
   
+  <script>
+  
+  let proces=null;
+  function proveri(){
+  if (document.getElementById("MEJL").value.trim() == "")
+  {
+  alert("МОРАТЕ УНЕТИ МЕЈЛ АДРЕСУ!");
+  }
+  else
+  {
+	alert("ВАША ПОРУКА ЈЕ УСПЕШНО ПОСЛАТА!");
+  }
+  }
+  
+  
+  let poz = 0;
+  function macka()
+  {
+  
+	document.getElementById("MACKA").style.left = poz.toString() + "px"
+	if(poz<1366){
+	poz = poz+10;
+	}else{
+	clearInterval(proces);
+	document.getElementById("MACKA").remove();
+	}
+  }
+  
+  if(location.search =="?MACKA"){
+	var elem = document.createElement('img');
+	elem.src = "MEMZ.webp"
+	elem.id = "MACKA"
+	elem.style.cssText = 'position:fixed; top:300px; left:0px; width:100px;z-index:1000;'
+	document.body.appendChild(elem);
+	
+	let proces= setInterval(macka, 100);
+	
+	
+}
+  </script>
+  
+  
   
   </body>
+
 
 </html>

@@ -135,6 +135,11 @@ body{
     
 }
 
+#GREETER:hover
+{
+	color:#F0C808;
+}
+
 #telo1
 {
     padding:5px 10px 5px 0px;
